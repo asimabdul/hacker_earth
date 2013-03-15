@@ -1,6 +1,5 @@
 require "spec_helper"
-
-require "digital_processor"
+require "./digital_processor"
 
 describe DigitalProcessor do
   it "should return 6 for 0" do
