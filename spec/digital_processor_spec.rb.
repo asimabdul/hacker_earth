@@ -1,0 +1,13 @@
+require "spec_helper"
+
+require "digital_processor"
+
+describe DigitalProcessor do
+  it "should return 6 for 0" do
+    DigitalProcessor.new(0).count_dashes.should == 6
+  end
+  
+  it "should return 18 for 12134" do
+    DigitalProcessor.new(12134).count_dashes.should == 18
+  end
+end
